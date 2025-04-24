@@ -1,0 +1,670 @@
+PS C:\Users\mamie\Desktop\YSA> & C:/Users/mamie/AppData/Local/Programs/Python/Python312/python.exe c:/Users/mamie/Desktop/YSA/Offensive.py
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\mamie\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+===== Veri Seti Örneği =====
+   Unnamed: 0  count  hate_speech  offensive_language  neither  class                                              tweet
+0           0      3            0                   0        3      2  !!! RT @mayasolovely: As a woman you shouldn't...
+1           1      3            0                   3        0      1  !!!!! RT @mleew17: boy dats cold...tyga dwn ba...
+2           2      3            0                   3        0      1  !!!!!!! RT @UrKindOfBrand Dawg!!!! RT @80sbaby...
+3           3      3            0                   2        1      1  !!!!!!!!! RT @C_G_Anderson: @viva_based she lo...
+4           4      6            0                   6        0      1  !!!!!!!!!!!!! RT @ShenikaRoberts: The shit you...
+
+===== Sınıf Dağılımı =====
+class
+1    19190
+2     4163
+0     1430
+Name: count, dtype: int64
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+===== Epoch 1/1 =====
+Eğitim: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:31<00:00,  2.75it/s, accuracy=86.8, loss=0.187] 
+Eğitim Kaybı: 0.3728, Eğitim Doğruluğu: 86.79%
+Doğrulama: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  9.06it/s, accuracy=90.9, loss=0.25] 
+Doğrulama Kaybı: 0.2744, Doğrulama Doğruluğu: 90.86%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.50      0.24      0.33       290
+   Offensive       0.93      0.96      0.95      3832
+     Neutral       0.86      0.90      0.88       835
+
+    accuracy                           0.91      4957
+   macro avg       0.76      0.70      0.72      4957
+weighted avg       0.90      0.91      0.90      4957
+
+PS C:\Users\mamie\Desktop\YSA> & C:/Users/mamie/AppData/Local/Programs/Python/Python312/python.exe c:/Users/mamie/Desktop/YSA/Offensive.py
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\mamie\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+===== Veri Seti Örneği =====
+   Unnamed: 0  count  hate_speech  offensive_language  neither  class                                              tweet
+0           0      3            0                   0        3      2  !!! RT @mayasolovely: As a woman you shouldn't...
+1           1      3            0                   3        0      1  !!!!! RT @mleew17: boy dats cold...tyga dwn ba...
+2           2      3            0                   3        0      1  !!!!!!! RT @UrKindOfBrand Dawg!!!! RT @80sbaby...
+3           3      3            0                   2        1      1  !!!!!!!!! RT @C_G_Anderson: @viva_based she lo...
+4           4      6            0                   6        0      1  !!!!!!!!!!!!! RT @ShenikaRoberts: The shit you...
+
+===== Sınıf Dağılımı =====
+class
+1    19190
+2     4163
+0     1430
+Name: count, dtype: int64
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+===== Epoch 1/1 =====
+Eğitim: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:42<00:00,  2.68it/s, accuracy=88.1, loss=0.0427] 
+Eğitim Kaybı: 0.3443, Eğitim Doğruluğu: 88.07%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:35<00:00,  8.84it/s, accuracy=91.3, loss=0.215] 
+Doğrulama Kaybı: 0.2632, Doğrulama Doğruluğu: 91.31%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.54      0.25      0.34       290
+   Offensive       0.94      0.96      0.95      3832
+     Neutral       0.86      0.92      0.89       835
+
+    accuracy                           0.91      4957
+   macro avg       0.78      0.71      0.73      4957
+weighted avg       0.90      0.91      0.90      4957
+
+PS C:\Users\mamie\Desktop\YSA> & C:/Users/mamie/AppData/Local/Programs/Python/Python312/python.exe c:/Users/mamie/Desktop/YSA/Offensive.py
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\mamie\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+===== Veri Seti Örneği =====
+   Unnamed: 0  count  hate_speech  offensive_language  neither  class                                              tweet
+0           0      3            0                   0        3      2  !!! RT @mayasolovely: As a woman you shouldn't...
+1           1      3            0                   3        0      1  !!!!! RT @mleew17: boy dats cold...tyga dwn ba...
+2           2      3            0                   3        0      1  !!!!!!! RT @UrKindOfBrand Dawg!!!! RT @80sbaby...
+3           3      3            0                   2        1      1  !!!!!!!!! RT @C_G_Anderson: @viva_based she lo...
+4           4      6            0                   6        0      1  !!!!!!!!!!!!! RT @ShenikaRoberts: The shit you...
+
+===== Sınıf Dağılımı =====
+class
+1    19190
+2     4163
+0     1430
+Name: count, dtype: int64
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+===== Epoch 1/3 =====
+Eğitim: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:31<00:00,  2.75it/s, accuracy=87.9, loss=0.5] 
+Eğitim Kaybı: 0.3534, Eğitim Doğruluğu: 87.92%
+Doğrulama: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  9.00it/s, accuracy=90.6, loss=0.15] 
+Doğrulama Kaybı: 0.2669, Doğrulama Doğruluğu: 90.62%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.44      0.36      0.39       290
+   Offensive       0.94      0.96      0.95      3832
+     Neutral       0.89      0.87      0.88       835
+
+    accuracy                           0.91      4957
+   macro avg       0.76      0.73      0.74      4957
+weighted avg       0.90      0.91      0.90      4957
+
+
+===== Epoch 2/3 =====
+Eğitim: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:34<00:00,  2.73it/s, accuracy=91.4, loss=0.0793] 
+Eğitim Kaybı: 0.2468, Eğitim Doğruluğu: 91.40%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  9.00it/s, accuracy=91.3, loss=0.205] 
+Doğrulama Kaybı: 0.2480, Doğrulama Doğruluğu: 91.35%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.53      0.24      0.33       290
+   Offensive       0.93      0.97      0.95      3832
+     Neutral       0.89      0.90      0.89       835
+
+    accuracy                           0.91      4957
+   macro avg       0.78      0.70      0.72      4957
+weighted avg       0.90      0.91      0.90      4957
+
+
+===== Epoch 3/3 =====
+Eğitim: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:33<00:00,  2.73it/s, accuracy=92, loss=0.0114] 
+Eğitim Kaybı: 0.2222, Eğitim Doğruluğu: 92.01%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  9.02it/s, accuracy=91.1, loss=0.188] 
+Doğrulama Kaybı: 0.2545, Doğrulama Doğruluğu: 91.06%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.52      0.12      0.20       290
+   Offensive       0.92      0.98      0.95      3832
+     Neutral       0.89      0.88      0.88       835
+
+    accuracy                           0.91      4957
+   macro avg       0.78      0.66      0.68      4957
+   Offensive       0.92      0.98      0.95      3832
+     Neutral       0.89      0.88      0.88       835
+
+    accuracy                           0.91      4957
+   Offensive       0.92      0.98      0.95      3832
+     Neutral       0.89      0.88      0.88       835
+
+   Offensive       0.92      0.98      0.95      3832
+     Neutral       0.89      0.88      0.88       835
+
+   Offensive       0.92      0.98      0.95      3832
+     Neutral       0.89      0.88      0.88       835
+
+   Offensive       0.92      0.98      0.95      3832
+     Neutral       0.89      0.88      0.88       835
+   Offensive       0.92      0.98      0.95      3832
+   Offensive       0.92      0.98      0.95      3832
+   Offensive       0.92      0.98      0.95      3832
+   Offensive       0.92      0.98      0.95      3832
+     Neutral       0.89      0.88      0.88       835
+   Offensive       0.92      0.98      0.95      3832
+     Neutral       0.89      0.88      0.88       835
+
+   Offensive       0.92      0.98      0.95      3832
+     Neutral       0.89      0.88      0.88       835
+
+    accuracy                           0.91      4957
+   Offensive       0.92      0.98      0.95      3832
+     Neutral       0.89      0.88      0.88       835
+
+    accuracy                           0.91      4957
+   Offensive       0.92      0.98      0.95      3832
+     Neutral       0.89      0.88      0.88       835
+
+    accuracy                           0.91      4957
+   Offensive       0.92      0.98      0.95      3832
+     Neutral       0.89      0.88      0.88       835
+
+   Offensive       0.92      0.98      0.95      3832
+     Neutral       0.89      0.88      0.88       835
+   Offensive       0.92      0.98      0.95      3832
+   Offensive       0.92      0.98      0.95      3832
+   Offensive       0.92      0.98      0.95      3832
+   Offensive       0.92      0.98      0.95      3832
+     Neutral       0.89      0.88      0.88       835
+
+    accuracy                           0.91      4957
+   macro avg       0.78      0.66      0.68      4957
+weighted avg       0.89      0.91      0.89      4957
+
+PS C:\Users\mamie\Desktop\YSA> & C:/Users/mamie/AppData/Local/Programs/Python/Python312/python.exe c:/Users/mamie/Desktop/YSA/Offensive.py
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\mamie\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+===== Veri Seti Örneği =====
+   Unnamed: 0  count  hate_speech  offensive_language  neither  class                                              tweet
+0           0      3            0                   0        3      2  !!! RT @mayasolovely: As a woman you shouldn't...
+1           1      3            0                   3        0      1  !!!!! RT @mleew17: boy dats cold...tyga dwn ba...
+2           2      3            0                   3        0      1  !!!!!!! RT @UrKindOfBrand Dawg!!!! RT @80sbaby...
+3           3      3            0                   2        1      1  !!!!!!!!! RT @C_G_Anderson: @viva_based she lo...
+4           4      6            0                   6        0      1  !!!!!!!!!!!!! RT @ShenikaRoberts: The shit you...
+
+===== Sınıf Dağılımı =====
+class
+1    19190
+2     4163
+0     1430
+Name: count, dtype: int64
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+===== Epoch 1/8 =====
+Eğitim: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:31<00:00,  2.75it/s, accuracy=87.5, loss=0.0498]
+Eğitim Kaybı: 0.3555, Eğitim Doğruluğu: 87.48%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  9.04it/s, accuracy=89.5, loss=0.227]
+Doğrulama Kaybı: 0.2796, Doğrulama Doğruluğu: 89.51%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.42      0.43      0.42       290
+   Offensive       0.93      0.95      0.94      3832
+     Neutral       0.91      0.81      0.85       835
+
+    accuracy                           0.90      4957
+   macro avg       0.75      0.73      0.74      4957
+weighted avg       0.90      0.90      0.89      4957
+
+
+===== Epoch 2/8 =====
+Eğitim: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:33<00:00,  2.73it/s, accuracy=91.4, loss=0.0477] 
+Eğitim Kaybı: 0.2458, Eğitim Doğruluğu: 91.36%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  9.03it/s, accuracy=90.3, loss=0.172] 
+Doğrulama Kaybı: 0.2807, Doğrulama Doğruluğu: 90.26%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.42      0.53      0.47       290
+   Offensive       0.95      0.94      0.95      3832
+     Neutral       0.91      0.85      0.88       835
+
+    accuracy                           0.90      4957
+   macro avg       0.76      0.77      0.76      4957
+weighted avg       0.91      0.90      0.91      4957
+
+
+===== Epoch 3/8 =====
+Eğitim: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:33<00:00,  2.73it/s, accuracy=91.7, loss=0.192] 
+Eğitim Kaybı: 0.2260, Eğitim Doğruluğu: 91.74%
+Doğrulama: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  9.02it/s, accuracy=91, loss=0.233] 
+Doğrulama Kaybı: 0.2549, Doğrulama Doğruluğu: 90.96%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.51      0.18      0.27       290
+   Offensive       0.92      0.98      0.95      3832
+     Neutral       0.90      0.85      0.88       835
+
+    accuracy                           0.91      4957
+   macro avg       0.78      0.67      0.70      4957
+weighted avg       0.89      0.91      0.90      4957
+
+
+===== Epoch 4/8 =====
+Eğitim: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:33<00:00,  2.73it/s, accuracy=92.5, loss=0.133] 
+Eğitim Kaybı: 0.2053, Eğitim Doğruluğu: 92.51%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  9.02it/s, accuracy=91.2, loss=0.194] 
+Doğrulama Kaybı: 0.2474, Doğrulama Doğruluğu: 91.24%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.50      0.44      0.47       290
+ Hate Speech       0.50      0.44      0.47       290
+   Offensive       0.95      0.95      0.95      3832
+   Offensive       0.95      0.95      0.95      3832
+     Neutral       0.88      0.91      0.89       835
+
+     Neutral       0.88      0.91      0.89       835
+
+    accuracy                           0.91      4957
+
+    accuracy                           0.91      4957
+   macro avg       0.77      0.77      0.77      4957
+    accuracy                           0.91      4957
+   macro avg       0.77      0.77      0.77      4957
+   macro avg       0.77      0.77      0.77      4957
+weighted avg       0.91      0.91      0.91      4957
+weighted avg       0.91      0.91      0.91      4957
+
+
+
+===== Epoch 5/8 =====
+Eğitim: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:33<00:00,  2.73it/s, accuracy=93.2, loss=0.0152] 
+Eğitim Kaybı: 0.1878, Eğitim Doğruluğu: 93.23%
+Doğrulama: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  9.01it/s, accuracy=91, loss=0.191] 
+Doğrulama Kaybı: 0.2602, Doğrulama Doğruluğu: 90.98%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.51      0.41      0.45       290
+   Offensive       0.94      0.95      0.95      3832
+     Neutral       0.88      0.88      0.88       835
+
+    accuracy                           0.91      4957
+   macro avg       0.78      0.75      0.76      4957
+weighted avg       0.90      0.91      0.91      4957
+
+
+===== Epoch 6/8 =====
+Eğitim: 100%|████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:34<00:00,  2.73it/s, accuracy=93.8, loss=0.00442] 
+Eğitim Kaybı: 0.1702, Eğitim Doğruluğu: 93.83%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  9.02it/s, accuracy=89.3, loss=0.146]
+Doğrulama Kaybı: 0.2974, Doğrulama Doğruluğu: 89.33%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.40      0.64      0.49       290
+   Offensive       0.95      0.92      0.94      3832
+     Neutral       0.91      0.84      0.87       835
+
+    accuracy                           0.89      4957
+   macro avg       0.75      0.80      0.77      4957
+weighted avg       0.91      0.89      0.90      4957
+weighted avg       0.91      0.89      0.90      4957
+
+
+
+===== Epoch 7/8 =====
+Eğitim: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:34<00:00,  2.73it/s, accuracy=94.1, loss=0.489] 
+Eğitim Kaybı: 0.1566, Eğitim Doğruluğu: 94.07%
+===== Epoch 7/8 =====
+Eğitim: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:34<00:00,  2.73it/s, accuracy=94.1, loss=0.489] 
+Eğitim Kaybı: 0.1566, Eğitim Doğruluğu: 94.07%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  9.07it/s, accuracy=90.4, loss=0.219] 
+Doğrulama Kaybı: 0.2870, Doğrulama Doğruluğu: 90.42%
+Eğitim Kaybı: 0.1566, Eğitim Doğruluğu: 94.07%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  9.07it/s, accuracy=90.4, loss=0.219] 
+Doğrulama Kaybı: 0.2870, Doğrulama Doğruluğu: 90.42%
+              precision    recall  f1-score   support
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  9.07it/s, accuracy=90.4, loss=0.219] 
+Doğrulama Kaybı: 0.2870, Doğrulama Doğruluğu: 90.42%
+              precision    recall  f1-score   support
+
+Doğrulama Kaybı: 0.2870, Doğrulama Doğruluğu: 90.42%
+              precision    recall  f1-score   support
+
+              precision    recall  f1-score   support
+
+ Hate Speech       0.45      0.48      0.47       290
+
+ Hate Speech       0.45      0.48      0.47       290
+   Offensive       0.94      0.94      0.94      3832
+ Hate Speech       0.45      0.48      0.47       290
+   Offensive       0.94      0.94      0.94      3832
+     Neutral       0.89      0.87      0.88       835
+
+    accuracy                           0.90      4957
+   Offensive       0.94      0.94      0.94      3832
+     Neutral       0.89      0.87      0.88       835
+
+    accuracy                           0.90      4957
+   macro avg       0.76      0.76      0.76      4957
+     Neutral       0.89      0.87      0.88       835
+
+    accuracy                           0.90      4957
+   macro avg       0.76      0.76      0.76      4957
+weighted avg       0.91      0.90      0.90      4957
+
+    accuracy                           0.90      4957
+   macro avg       0.76      0.76      0.76      4957
+weighted avg       0.91      0.90      0.90      4957
+
+   macro avg       0.76      0.76      0.76      4957
+weighted avg       0.91      0.90      0.90      4957
+
+
+weighted avg       0.91      0.90      0.90      4957
+
+
+===== Epoch 8/8 =====
+
+
+===== Epoch 8/8 =====
+
+===== Epoch 8/8 =====
+===== Epoch 8/8 =====
+Eğitim: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:32<00:00,  2.74it/s, accuracy=95, loss=0.0297] 
+Eğitim Kaybı: 0.1336, Eğitim Doğruluğu: 95.03%
+Eğitim Kaybı: 0.1336, Eğitim Doğruluğu: 95.03%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  9.09it/s, accuracy=89.7, loss=0.222] 
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  9.09it/s, accuracy=89.7, loss=0.222] 
+Doğrulama Kaybı: 0.3201, Doğrulama Doğruluğu: 89.71%
+Doğrulama Kaybı: 0.3201, Doğrulama Doğruluğu: 89.71%
+              precision    recall  f1-score   support
+
+
+ Hate Speech       0.42      0.57      0.48       290
+   Offensive       0.95      0.93      0.94      3832
+     Neutral       0.90      0.84      0.87       835
+
+    accuracy                           0.90      4957
+   macro avg       0.75      0.78      0.76      4957
+weighted avg       0.91      0.90      0.90      4957
+
+PS C:\Users\mamie\Desktop\YSA> & C:/Users/mamie/AppData/Local/Programs/Python/Python312/python.exe c:/Users/mamie/Desktop/YSA/Offensive.py
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\mamie\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+===== Veri Seti Örneği =====
+   Unnamed: 0  count  hate_speech  offensive_language  neither  class                                              tweet
+0           0      3            0                   0        3      2  !!! RT @mayasolovely: As a woman you shouldn't...
+1           1      3            0                   3        0      1  !!!!! RT @mleew17: boy dats cold...tyga dwn ba...
+2           2      3            0                   3        0      1  !!!!!!! RT @UrKindOfBrand Dawg!!!! RT @80sbaby...
+3           3      3            0                   2        1      1  !!!!!!!!! RT @C_G_Anderson: @viva_based she lo...
+4           4      6            0                   6        0      1  !!!!!!!!!!!!! RT @ShenikaRoberts: The shit you...
+
+===== Sınıf Dağılımı =====
+class
+1    19190
+2     4163
+0     1430
+Name: count, dtype: int64
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+===== Epoch 1/16 =====
+Eğitim: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:31<00:00,  2.75it/s, accuracy=87.7, loss=0.303]
+Eğitim Kaybı: 0.3560, Eğitim Doğruluğu: 87.70%
+Doğrulama: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  9.01it/s, accuracy=91, loss=0.19]
+Doğrulama Kaybı: 0.2565, Doğrulama Doğruluğu: 91.00%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.47      0.25      0.33       290
+   Offensive       0.94      0.96      0.95      3832
+     Neutral       0.87      0.91      0.89       835
+
+    accuracy                           0.91      4957
+   macro avg       0.76      0.70      0.72      4957
+weighted avg       0.90      0.91      0.90      4957
+
+
+===== Epoch 2/16 =====
+Eğitim: 100%|████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:35<00:00,  2.72it/s, accuracy=91.2, loss=0.00815] 
+Eğitim Kaybı: 0.2457, Eğitim Doğruluğu: 91.21%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  8.95it/s, accuracy=90.7, loss=0.174] 
+Doğrulama Kaybı: 0.2654, Doğrulama Doğruluğu: 90.66%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.46      0.41      0.43       290
+   Offensive       0.93      0.96      0.95      3832
+     Neutral       0.92      0.84      0.88       835
+
+    accuracy                           0.91      4957
+   macro avg       0.77      0.74      0.75      4957
+weighted avg       0.90      0.91      0.90      4957
+
+
+===== Epoch 3/16 =====
+Eğitim: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:37<00:00,  2.71it/s, accuracy=91.9, loss=1.19]
+Eğitim Kaybı: 0.2239, Eğitim Doğruluğu: 91.89%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  8.91it/s, accuracy=91.3, loss=0.197] 
+Doğrulama Kaybı: 0.2525, Doğrulama Doğruluğu: 91.33%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.48      0.51      0.50       290
+   Offensive       0.95      0.94      0.95      3832
+     Neutral       0.89      0.91      0.90       835
+
+    accuracy                           0.91      4957
+   macro avg       0.78      0.79      0.78      4957
+weighted avg       0.92      0.91      0.91      4957
+
+
+===== Epoch 4/16 =====
+Eğitim: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:37<00:00,  2.71it/s, accuracy=92.6, loss=2.69] 
+Eğitim Kaybı: 0.2075, Eğitim Doğruluğu: 92.64%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  8.90it/s, accuracy=91.4, loss=0.231] 
+Doğrulama Kaybı: 0.2591, Doğrulama Doğruluğu: 91.41%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.48      0.49      0.49       290
+   Offensive       0.95      0.95      0.95      3832
+     Neutral       0.90      0.91      0.90       835
+
+    accuracy                           0.91      4957
+   macro avg       0.78      0.78      0.78      4957
+weighted avg       0.92      0.91      0.91      4957
+
+
+===== Epoch 5/16 =====
+Eğitim: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:37<00:00,  2.71it/s, accuracy=93.2, loss=0.0229] 
+Eğitim Kaybı: 0.1890, Eğitim Doğruluğu: 93.18%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  8.91it/s, accuracy=90.4, loss=0.165] 
+Doğrulama Kaybı: 0.2687, Doğrulama Doğruluğu: 90.40%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.44      0.58      0.50       290
+   Offensive       0.95      0.94      0.95      3832
+     Neutral       0.91      0.84      0.87       835
+
+    accuracy                           0.90      4957
+   macro avg       0.77      0.79      0.77      4957
+weighted avg       0.91      0.90      0.91      4957
+
+
+===== Epoch 6/16 =====
+Eğitim: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:37<00:00,  2.71it/s, accuracy=93.8, loss=0.0348] 
+Eğitim Kaybı: 0.1720, Eğitim Doğruluğu: 93.77%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  8.87it/s, accuracy=91.1, loss=0.196] 
+Doğrulama Kaybı: 0.2798, Doğrulama Doğruluğu: 91.12%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.53      0.34      0.42       290
+   Offensive       0.93      0.97      0.95      3832
+     Neutral       0.92      0.83      0.87       835
+
+    accuracy                           0.91      4957
+   macro avg       0.79      0.72      0.75      4957
+weighted avg       0.90      0.91      0.91      4957
+
+
+===== Epoch 7/16 =====
+Eğitim: 100%|████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:37<00:00,  2.71it/s, accuracy=94.3, loss=0.00951] 
+Eğitim Kaybı: 0.1556, Eğitim Doğruluğu: 94.28%
+Doğrulama: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  8.89it/s, accuracy=90, loss=0.116] 
+Doğrulama Kaybı: 0.3126, Doğrulama Doğruluğu: 89.99%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.42      0.60      0.50       290
+   Offensive       0.95      0.93      0.94      3832
+     Neutral       0.90      0.86      0.88       835
+
+    accuracy                           0.90      4957
+   macro avg       0.76      0.80      0.77      4957
+weighted avg       0.91      0.90      0.91      4957
+
+
+===== Epoch 8/16 =====
+Eğitim: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:38<00:00,  2.71it/s, accuracy=94.9, loss=0.235] 
+Eğitim Kaybı: 0.1394, Eğitim Doğruluğu: 94.91%
+Doğrulama: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:35<00:00,  8.83it/s, accuracy=90, loss=0.185] 
+Doğrulama Kaybı: 0.3196, Doğrulama Doğruluğu: 89.99%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.43      0.57      0.49       290
+   Offensive       0.95      0.93      0.94      3832
+     Neutral       0.89      0.88      0.88       835
+
+    accuracy                           0.90      4957
+   macro avg       0.75      0.79      0.77      4957
+weighted avg       0.91      0.90      0.90      4957
+
+
+===== Epoch 9/16 =====
+Eğitim: 100%|████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:36<00:00,  2.71it/s, accuracy=95.5, loss=0.00168] 
+Eğitim Kaybı: 0.1233, Eğitim Doğruluğu: 95.50%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  9.01it/s, accuracy=89.7, loss=0.166] 
+Doğrulama Kaybı: 0.3444, Doğrulama Doğruluğu: 89.67%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.41      0.56      0.47       290
+   Offensive       0.95      0.93      0.94      3832
+     Neutral       0.89      0.84      0.86       835
+
+    accuracy                           0.90      4957
+   macro avg       0.75      0.78      0.76      4957
+weighted avg       0.91      0.90      0.90      4957
+
+
+===== Epoch 10/16 =====
+Eğitim: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:33<00:00,  2.73it/s, accuracy=96.2, loss=0.0416]
+Eğitim Kaybı: 0.1069, Eğitim Doğruluğu: 96.20%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  9.05it/s, accuracy=88.8, loss=0.213] 
+Doğrulama Kaybı: 0.3797, Doğrulama Doğruluğu: 88.78%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.37      0.56      0.45       290
+   Offensive       0.95      0.92      0.93      3832
+     Neutral       0.88      0.87      0.87       835
+
+    accuracy                           0.89      4957
+   macro avg       0.73      0.78      0.75      4957
+weighted avg       0.90      0.89      0.90      4957
+
+
+===== Epoch 11/16 =====
+Eğitim: 100%|████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:33<00:00,  2.74it/s, accuracy=96.4, loss=0.00105]
+Eğitim Kaybı: 0.0985, Eğitim Doğruluğu: 96.35%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  9.05it/s, accuracy=89.7, loss=0.112] 
+Doğrulama Kaybı: 0.3726, Doğrulama Doğruluğu: 89.69%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.40      0.53      0.46       290
+   Offensive       0.95      0.93      0.94      3832
+     Neutral       0.89      0.85      0.87       835
+
+    accuracy                           0.90      4957
+   macro avg       0.75      0.77      0.76      4957
+weighted avg       0.91      0.90      0.90      4957
+
+
+===== Epoch 12/16 =====
+Eğitim: 100%|███████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:34<00:00,  2.73it/s, accuracy=96.9, loss=0.000896] 
+Eğitim Kaybı: 0.0847, Eğitim Doğruluğu: 96.88%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  9.01it/s, accuracy=90.2, loss=0.142] 
+Doğrulama Kaybı: 0.3985, Doğrulama Doğruluğu: 90.22%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.43      0.54      0.48       290
+   Offensive       0.96      0.93      0.94      3832
+     Neutral       0.86      0.91      0.88       835
+
+    accuracy                           0.90      4957
+   macro avg       0.75      0.79      0.77      4957
+weighted avg       0.91      0.90      0.91      4957
+
+
+===== Epoch 13/16 =====
+Eğitim: 100%|███████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:34<00:00,  2.73it/s, accuracy=97.7, loss=0.000318] 
+Eğitim Kaybı: 0.0667, Eğitim Doğruluğu: 97.65%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:35<00:00,  8.84it/s, accuracy=89.7, loss=0.241] 
+Doğrulama Kaybı: 0.4362, Doğrulama Doğruluğu: 89.71%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.41      0.49      0.44       290
+   Offensive       0.95      0.93      0.94      3832
+     Neutral       0.88      0.89      0.88       835
+
+    accuracy                           0.90      4957
+   macro avg       0.74      0.77      0.75      4957
+weighted avg       0.90      0.90      0.90      4957
+
+
+===== Epoch 14/16 =====
+Eğitim: 100%|████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:34<00:00,  2.73it/s, accuracy=97.8, loss=0.00277] 
+Eğitim Kaybı: 0.0607, Eğitim Doğruluğu: 97.77%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:35<00:00,  8.84it/s, accuracy=87.7, loss=0.151] 
+Doğrulama Kaybı: 0.4753, Doğrulama Doğruluğu: 87.73%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.33      0.56      0.42       290
+   Offensive       0.95      0.91      0.93      3832
+     Neutral       0.90      0.83      0.86       835
+
+    accuracy                           0.88      4957
+   macro avg       0.72      0.77      0.74      4957
+weighted avg       0.90      0.88      0.89      4957
+
+
+===== Epoch 15/16 =====
+Eğitim: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:33<00:00,  2.73it/s, accuracy=98, loss=0.0203] 
+Eğitim Kaybı: 0.0539, Eğitim Doğruluğu: 97.99%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  9.07it/s, accuracy=88.9, loss=0.135] 
+Doğrulama Kaybı: 0.4627, Doğrulama Doğruluğu: 88.94%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.37      0.54      0.44       290
+   Offensive       0.95      0.92      0.93      3832
+     Neutral       0.90      0.87      0.88       835
+
+    accuracy                           0.89      4957
+   macro avg       0.74      0.78      0.75      4957
+weighted avg       0.90      0.89      0.90      4957
+
+
+===== Epoch 16/16 =====
+Eğitim: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 1240/1240 [07:32<00:00,  2.74it/s, accuracy=98.7, loss=0.0113] 
+Eğitim Kaybı: 0.0394, Eğitim Doğruluğu: 98.68%
+Doğrulama: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 310/310 [00:34<00:00,  9.07it/s, accuracy=89.3, loss=0.282] 
+Doğrulama Kaybı: 0.5413, Doğrulama Doğruluğu: 89.35%
+              precision    recall  f1-score   support
+
+ Hate Speech       0.39      0.47      0.43       290
+   Offensive       0.95      0.92      0.94      3832
+     Neutral       0.86      0.91      0.88       835
+
+    accuracy                           0.89      4957
+   macro avg       0.73      0.77      0.75      4957
+weighted avg       0.90      0.89      0.90      4957
